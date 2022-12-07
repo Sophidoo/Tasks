@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(247, 247, 247);
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+.hero{
+    padding: 50px 100px;
+    display: flex;
+    row-gap: 20px;
+    justify-content: center;
+    
+}
+/* .hero h2{
+    font-size: 30px;
+} */
+
+nav{
+    padding: 25px 100px;
+    /* background-color: rgb(181, 7, 88); */
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 4px 10px rgba(205, 205, 205, 0.103);
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+nav .logo{
+    letter-spacing: 3px;
+}
+nav .links{
+    display: flex;
+    column-gap: 40px;
+}
+nav a:nth-child(1){
+    color: rgb(181, 7, 88);
+}
+nav .links a:hover{
+    color: rgb(181, 7, 88);
+}
+
+.productWrapper{
+    display: flex;
+    justify-content: space-between;
+    /* height: 70vh; */
+    padding: 20px 0;
+    width: 100%;
+}
+.leftProduct{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid rgb(183, 183, 183);
+    
+}
+.basicInformation{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 70%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.inputWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 3px;
+}
+.inputWrapper label{
+    font-size: 15px;
+    font-weight: 500;
+}
+.inputWrapper input{
+    border: 1px solid rgb(183, 183, 183);
+    padding: 7px 10px;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+}
+.inputWrapper input:focus{
+    border: 1px solid rgb(181, 7, 88);
+}
+.inputWrapper select{
+    border: 1px solid rgb(183, 183, 183);
+    padding: 7px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.inputWrapper select:focus{
+    border: 1px solid rgb(84,96,204);
+}
+.inputWrapper textarea{
+    border: 1px solid rgb(183, 183, 183);
+    padding: 7px 10px;
+    background-color: white;
+    border-radius: 5px;
+    resize: vertical;
+}
+.inputWrapper textarea:focus{
+    border: 1px solid rgb(84,96,204);
+}
+button{
+    background-color: rgb(181, 7, 88);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.preview{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 65%;
+}
+.wearPreview{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.wearPreview img{
+    height: 230px;
+    width: 100%;
+    background-color: gray;
+    object-fit: cover;
+    /* box-shadow: 0px 0px 10px rgb(239, 239, 239); */
+    border-radius: 10px;
+    border: 1px solid rgb(213, 213, 213);
+}
+.wearPreview .content .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.content .heading p{
+    font-weight: 600;
+    font-size: 25px;
+}
+.size{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.size h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.sizes{
+    display: flex;
+    column-gap: 10px;
+    color: rgb(70, 70, 70);
+}
+.sizes p{
+    border-radius: 3px;
+    background-color: rgba(128, 128, 128, 0.142);
+    padding: 0.5px 6px;
+}
+.rightProduct{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.description{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+footer{
+    /* background-color: rgb(181, 7, 88); */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 150px;
+    font-weight: 500;
+    color: black;
+}
+
+.alert{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid green;
+    padding: 8px 10px;
+    padding-right: 20px;
+    display: flex;
+    column-gap: 10px;
+    width: fit-content;
+    align-items: center;
+    display: none;
+}
+.bi-check-lg{
+    font-size: 40px;
+    color: green;
+}
+.rightalert h4{
+    font-size: 20px;
+    color: green;
+}
+.rightalert p{
+    font-size: 14px;
+    color: rgb(82, 82, 82);
+}

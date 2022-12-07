@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Fashion</title>
+    <link rel="stylesheet" href="Stylesheet/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="">Thrift</a>
+        </div>
+        <div class="links">
+            <a href="index.html" class="active">Add Wears</a>
+            <a href="view.html">View Wears</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <!-- <div class="header">
+            <h2>Add New Wear</h2>
+        </div> -->
+
+        <div class="productWrapper">
+            <div class="leftProduct">
+                <div class="basicInformation">
+                    <h2>Wear Information</h2>
+
+                    <form action="" id="addwear">
+
+                        <div class="inputWrapper">
+                            <label for="title" >Title</label>
+                            <input type="text" name="title" id="title" onkeyup="setTitle()">
+                        </div>
+                        
+
+                        <div class="inputWrapper">
+                            <label for="desc">Description</label>
+                            <textarea name="desc" id="desc" cols="30" rows="5" onkeyup="setDescription()"></textarea>
+                        </div>
+
+                        <div class="inputWrapper">
+                            <label for="image">Picture</label>
+                            <input type="url" name = "image" id = "image" onkeyup="setImage()">
+                        </div>
+
+                        <div class="inputWrapper">
+                            <label for="price">Price</label>
+                            <input type="number" name = "price" id="price" onkeyup="setPrice()">
+                        </div>
+
+                        <div class="inputWrapper">
+                            <label for="size">Size</label>
+                            <select name="size" id="size" onkeydown="setSize()">
+                                <option value="">None</option>
+                                <option value="s">Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                                <option value="xl">Xtra Large</option>
+                            </select>
+                        </div>
+
+
+
+                        <button type="submit">Add Wear</button>
+                    </form>
+                </div>
+            </div>
+            <div class="rightProduct">
+                <div class="preview">
+                    <h2>Preview</h2>
+
+                    <div class="wearPreview">
+                        <img src="" alt="" id="wimage">
+                        <div class="content">
+                            <div class="heading">
+                                <h3 id="wtitle">No Available Item</h3>
+                                <p id="wprice">N0.00</p>
+                            </div>
+
+                            <div class="size">
+                                <h4>Size</h4>
+                                <div class="sizes">
+                                    <p id="s">s</p>
+                                    <p id="m">m</p>
+                                    <p id="l">l</p>
+                                    <p id="xl">xl</p>
+                                    </div>
+                            </div>
+
+                            <div class="description">
+                                <p id="wdesc"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="Script/index.js"></script>
+    
+    <footer>
+        <p>Made with love❤️. Sophidoo</p>
+    </footer>
+    
+
+    <div class="alert" id="alert">
+        <div class="leftalert">
+            <i class="bi bi-check-lg"></i>
+        </div>
+        <div class="rightalert">
+            <h4>Success</h4>
+            <p id="successMessage">Your thrift wear have been added successfully</p>
+        </div>
+    </div>
+</body>
+</html>
