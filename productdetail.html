@@ -26,23 +26,23 @@
         </div>
         <div class="right-container">
             <div class="product-head">
-                <h1>XVT LUKE FITTED BATHING HELMET</h1>
+                <h1 id="title">XVT LUKE FITTED BATHING HELMET</h1>
                 <div class="quantity-and-cart">
                     <div class="price">
-                        <h2>$59.9</h2>
+                        <h2 id="price">$59.9</h2>
                     </div>
                     <div class="quantity-wrap">
-                        <a href="edit.html">Edit</a>
+                        <a href="edit.html?id=">Edit</a>
                         <button>Delete</button>
                     </div>
                 </div>
             </div>
-            <p class="size"><span>Size: </span>Small</p>
+            <p class="size" id="size"><span>Size: </span>Small</p>
             <div class="product-description">
                 <div class="desc-head">
                     <h2>Description</h2>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptas fuga est odit dignissimos quae hic natus tenetur, voluptatibus optio quibusdam quo, numquam quam itaque facere ipsam illum iure. Placeat harum corrupti possimus in! Placeat harum vero quam repellat qui.</p>
+                <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptas fuga est odit dignissimos quae hic natus tenetur, voluptatibus optio quibusdam quo, numquam quam itaque facere ipsam illum iure. Placeat harum corrupti possimus in! Placeat harum vero quam repellat qui.</p>
             </div>
         </div>
     </div>
@@ -53,32 +53,8 @@
 
 
 
-    <script>
-        let itemQuantity = 0
-        let count = document.querySelector("#item-quantity")
-        function increase(){
-            itemQuantity += 1
-            document.querySelector("#item-quantity").innerHTML = itemQuantity
-            if(count.innerHTML > 0){
-                document.querySelector("#decrease").style.display = "block"
-                document.querySelector("#increase").style.top = "3px"
-
-            }
-        }
+    <script src="Script/productdetail.js">
         
-        function decrease(){
-            if(count.innerHTML > 0){
-                itemQuantity -= 1
-            }
-            if(count.innerHTML == 0){
-                itemQuantity = 0
-            }
-            document.querySelector("#item-quantity").innerHTML = itemQuantity
-            if(count.innerHTML <= 0){
-                document.querySelector("#decrease").style.display = "none"
-            }
-
-        }
     </script>
 </body>
 </html>

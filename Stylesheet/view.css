@@ -120,6 +120,12 @@ nav .links a:hover{
     justify-content: space-between;
     align-items: center;
 }
+.content .head a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+}
 .content .head p{
     font-size: 22px;
     font-weight: 500;
@@ -151,4 +157,68 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+@media(max-width: 1300px){
+    nav{
+        padding: 20px 30px;
+    }
+    .productcardwrap{
+        padding: 50px 30px;
+    }
+    footer{
+        padding: 20px 10px;
+    }
+}
+@media(max-width: 1000px){
+    .productCard{
+        width: 31.33%;
+    }
+    nav{
+        padding: 20px 30px;
+    }
+    .productcardwrap{
+        padding: 50px 30px;
+    }
+    footer{
+        padding: 20px 10px;
+    }
+}
+@media(max-width: 700px){
+    .productCard{
+        width: 48.5%;
+    }
+}
+@media(max-width: 500px){
+    .productCard{
+        width: 100%;
+    }
+    .search{
+        width: 100%;
+    }
+    .search input{
+        width: 100%;
+    }
+    footer p{
+        font-size: 13px;
+    }
+}
+@media(max-width: 350px){
+    nav{
+        padding: 20px 10px;
+    }
+    .productcardwrap{
+        padding: 50px 10px;
+    }
+    nav .links{
+        column-gap: 10px;
+    }
+    nav .links a{
+        font-size: 13px;
+
+    }
+    
+    footer{
+        position: relative;
+    }
 }

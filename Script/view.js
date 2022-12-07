@@ -12,6 +12,8 @@ if(addw.length <= 0 || addw == null){
                 <h3 class = "prname">${addw[i].title}</h3>
                 <p>N${addw[i].price}</p>
             </div>
+            <p class="size"><span>Size: </span>${addw[i].size}</p>
+            <p class="description">${addw[i].desc}</p>
         </div>
     </div>`
     }
@@ -33,3 +35,9 @@ const search = () => {
         }
     }
 }
+
+const viewproduct = () => {
+    window.location.replace("/productdetail.html")
+}
+
+

@@ -227,3 +227,77 @@ footer{
     font-size: 14px;
     color: rgb(82, 82, 82);
 }
+
+@media(max-width: 1300px){
+    .basicInformation{
+        width: 100%;
+        padding-right: 50px;
+    }
+    .preview{
+        width: 100%;
+        padding-left: 50px;
+    }
+    footer{
+        padding: 20px 10px;
+    }
+}
+@media(max-width: 1000px){
+    nav{
+        padding: 20px 30px;
+    }
+    .hero{
+        padding: 50px 30px;
+    }
+}
+@media(max-width: 750px){
+    .basicInformation{
+        width: 100%;
+        padding-right: 20px;
+    }
+    .preview{
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+@media(max-width: 620px){
+    .productWrapper{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .leftProduct{
+        width: 100%;
+    }
+    .rightProduct{
+        width: 100%;
+    }
+    .basicInformation{
+        padding-right: 0px;
+    }
+    .leftProduct{
+        border-right: 0px;
+    }
+    .preview{
+        padding-left: 0px;
+    }
+    footer p{
+        font-size: 13px;
+    }
+}
+@media(max-width: 350px){
+    nav{
+        padding: 20px 10px;
+    }
+    .hero{
+        padding: 50px 10px;
+    }
+    nav .links{
+        column-gap: 10px;
+    }
+    nav .links a{
+        font-size: 13px;
+
+    }
+    footer{
+        position: relative;
+    }
+}
